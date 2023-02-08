@@ -1,4 +1,5 @@
 import React from 'react';
+import {button} from './Button';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,3 +20,11 @@ export default class App extends React.Component {
     );
   }
 }
+
+//add a button
+export default{
+  title:'click me',
+  component:Button,
+};
+
+export const Primary =()= > <Button primary>Button/</Button> 
