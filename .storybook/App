@@ -28,6 +28,7 @@ export const Primary = () => {
 
 //using args
 const Template = (args) => ({
+    "Primary";
 });
 
 export const Primary = Template.bind({});
