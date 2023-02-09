@@ -1,1 +1,46 @@
-npm run storybook
+npm run storybook;
+
+import {button} from './Button';
+import React from 'react';
+
+//add a button
+export default{
+  title:'click me',
+  component:Button,
+};
+
+//handle change
+
+export const Primary = () => {
+  const [value, setValue] = useState('Secondary');
+  const [isPrimary, setIsPrimary] = useState(false);
+
+  const handleOnChange = () => {
+    if (!isPrimary) {
+      setIsPrimary(true);
+      setValue('thanks');
+    }
+  };
+  return <Button primary={isPrimary} onClick={handleOnChange} label={value} />;
+};
+
+
+
+//using args
+const Template = (args) => ({
+});
+
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
+  label: 'click me',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  ...Primary.args,
+  primary: false,
+  lable:'thanks',
+};
+
+
