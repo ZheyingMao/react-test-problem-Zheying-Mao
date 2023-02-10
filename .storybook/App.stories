@@ -65,9 +65,6 @@ export const Primary = () => {
     </script>
 </head>
 
-    <!-- 1、有一个按钮， 按钮的内容叫click me -->
-    <!-- 2、点击按钮上的文案变成thanks -->
-    <!-- 3、再点击一次，变成click me -->
 <body>
     <div id="div1" class="reddiv">
 
