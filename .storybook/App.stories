@@ -43,7 +43,39 @@ export const Primary = () => {
 };
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stroy</title>
 
+
+    <script>
+        function test1() {
+            var e = document.getElementById("btn1");
+            if (e.innerHTML == "thanks") {
+                e.innerHTML = "click me"
+            } else if (e.innerHTML == "click me") {
+                e.innerHTML = "thanks"
+            }
+        }
+
+    </script>
+</head>
+
+    <!-- 1、有一个按钮， 按钮的内容叫click me -->
+    <!-- 2、点击按钮上的文案变成thanks -->
+    <!-- 3、再点击一次，变成click me -->
+<body>
+    <div id="div1" class="reddiv">
+
+    </div>
+    <button id="btn1"  onclick="test1()">click me</button>
+
+</body>
+</html>
 
 
 
