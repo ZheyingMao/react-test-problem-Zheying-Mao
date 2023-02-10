@@ -8,11 +8,7 @@ setGlobalConfig(globalStorybookConfig);
 import { App.stories } from './storybook'; 
 
 // Add your tests here
-yarn add --dev chromatic
-npx chromatic --project-token <your-project-token>
-Build 1 published.
 
-View it online at https://www.chromatic.com/build?appId=...&number=1.
 
 
 // See https://storybook.js.org/docs/react/writing-tests/importing-stories-in-tests#example-with-testing-library
